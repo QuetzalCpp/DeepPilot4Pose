@@ -3,13 +3,15 @@
 We present DeepPilot4Pose, a compact convolutional neural network for visual pose estimation that runs onboard novel smartcamera, the OAK-D. We aim at using it for micro aerial vehicle (MAV) localisation, which flies in an indoor environment,where neither GPS nor external sensors are available. This calls for onboard processing, which demands a combination ofsoftware and hardware that could run efficiently onboard the MAV. To this end, we exploit the use of this novel sensor thatcan be carried by the MAV, the OAK-D camera, capable of performing neural inference on its chip in addition to providingcolour, monochromatic and depth images. We show that our DeepPilot4Pose can run efficiently on the OAK-D at 65 Hz witha localisation performance comparable to that obtained with RGB-D ORB-SLAM using the OAK-D and running onboardthe MAV on the Intel Compute Stick at 12 Hz. 
 
 <p align="center">
-  <img src="images/DeepPilot4Pose.jpg" width="200" height="400" />
+  <img src="images/DeepPilot4Pose.jpg" width="400" />
 </p>
 
 ## DeepPilot4Pose Architecture
 This network obtains four independent output values corresponding to translation (x, y, z) and heading angle represented by the axial angle in the z−axis (EMz). Colour boxes represent the following layers: Convolutional layer (blue), max-pooling layer (dark yellow), batch normalisation (green), inception modules (red), fully connected layer (yellow) and dense layer (dark blue).
 
-![alt text](images/CNN_diagram.jpg)
+<p align="center">
+  <img src="images/CNN_diagram.jpg" width="400" />
+</p>
 
 
 ## Video
@@ -24,7 +26,7 @@ To execute the model trained with the DeepPilot4Pose network on the OAK-D camera
 3) Model compilation to convert the IR to the MyriadX file.
 
 <p align="center">
-  <img src="images/model_optimization.jpg">
+  <img src="images/model_optimization.jpg" width="400" />
 </p>
 
 ### Recommended system
@@ -45,7 +47,7 @@ cd DeepPilot4Pose
 - [Datasets to train DeepPilot4Pose](https://mnemosyne.inaoep.mx/index.php/s/uDiD4SZjw19EYuz)
 
 <p align="center">
-  <img src="images/Dataset.jpg">
+  <img src="images/Dataset.jpg" width="400" />
 </p>
 
 ### Train DeepPilot4Pose
