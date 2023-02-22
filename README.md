@@ -7,6 +7,7 @@ We present DeepPilot4Pose, a compact convolutional neural network for visual pos
 </p>
 
 ## DeepPilot4Pose Architecture
+This network obtains four independent output values corresponding to translation (x, y, z) and heading angle represented by the axial angle in the z−axis (EMz). Colour boxes represent the following layers: Convolutional layer (blue), max-pooling layer (dark yellow), batch normalisation (green), inception modules (red), fully connected layer (yellow) and dense layer (dark blue).
 
 ![alt text](images/CNN_diagram.jpg)
 
@@ -15,6 +16,16 @@ We present DeepPilot4Pose, a compact convolutional neural network for visual pos
 A video of this approach can be watched at: https://www.youtube.com/watch?v=Jtf8e06CZoo
 
 ## Installation
+
+To execute the model trained with the DeepPilot4Pose network on the OAK-D camera, it is necessary to convert it into the MyriadX blob format since the VPU does not directly execute the trained models from frameworks such as Caffe, TensorFlow, Kaldi, MXNet and PyTorch. Therefore, three steps are required: 
+
+1) Training the Network for position estimation and saving the model in .pb format
+2) Model optimisation to produce the OpenVINO Intermediate Representation (IR), where the config file in .xml format describes the network topology and weights file in .bin format, which contains the weights and biases binary data
+3) Model compilation to convert the IR to the MyriadX file.
+
+<p align="center">
+  <img src="images/model_optimization.jpg">
+</p>
 
 ### Recommended system
 - Ubuntu 20.04
@@ -32,6 +43,10 @@ cd DeepPilot4Pose
 ### Additional Resources
 - [DeepPilot Models pretrained]()
 - [Datasets to train DeepPilot4Pose](https://mnemosyne.inaoep.mx/index.php/s/uDiD4SZjw19EYuz)
+
+<p align="center">
+  <img src="images/Dataset.jpg">
+</p>
 
 ### Train DeepPilot4Pose
 
