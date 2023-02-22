@@ -43,7 +43,8 @@ cd DeepPilot4Pose
 ```
 
 ### Additional Resources
-<img align="right" width="300" src="images/Dataset.jpg">
+<img align="right" width="300" src="images/Dataset.jpg"/>
+
 - [DeepPilot Models pretrained]()
 - [Dataset to train DeepPilot4Pose](https://mnemosyne.inaoep.mx/index.php/s/uDiD4SZjw19EYuz)
 
