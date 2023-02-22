@@ -45,7 +45,7 @@ cd DeepPilot4Pose
 ### Additional Resources
 <img align="right" width="300" src="images/Dataset.jpg"/>
 
-- [DeepPilot Models pretrained]()
+- [DeepPilot Models pretrained](https://github.com/QuetzalCpp/DeepPilot4Pose/releases/download/untagged-b465937e532a5b917609/Warehouse_model2_Lshape_data17-20_100ep.tar.xz)
 - [Dataset to train DeepPilot4Pose](https://mnemosyne.inaoep.mx/index.php/s/uDiD4SZjw19EYuz)
 
 ### Train DeepPilot4Pose
