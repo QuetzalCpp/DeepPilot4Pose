@@ -1,46 +1,57 @@
-# DeepPilot4Pose
+# DeepPilot4Pose: a fast pose localisation for MAV indoor flight using the OAK-D camera
 
-## Available for the following versions
-- Ubuntu 20.04
+We present DeepPilot4Pose, a compact convolutional neural network for visual pose estimation that runs onboard novel smartcamera, the OAK-D. We aim at using it for micro aerial vehicle (MAV) localisation, which flies in an indoor environment,where neither GPS nor external sensors are available. This calls for onboard processing, which demands a combination ofsoftware and hardware that could run efficiently onboard the MAV. To this end, we exploit the use of this novel sensor thatcan be carried by the MAV, the OAK-D camera, capable of performing neural inference on its chip in addition to providingcolour, monochromatic and depth images. We show that our DeepPilot4Pose can run efficiently on the OAK-D at 65 Hz witha localisation performance comparable to that obtained with RGB-D ORB-SLAM using the OAK-D and running onboardthe MAV on the Intel Compute Stick at 12 Hz. 
 
-
-# DeepPilot4Pose: 
 ## Recommended system
-- Ubuntu 16.04
-- ROS kinetic Kame
-- Python 2.7.15
-- Cuda 9.0
-- Cudnn 7.3.0
-- Tensorflow 1.12.0
-- Keras 2.2.4
+- Ubuntu 20.04
+- Python 3.8.10 
+- Cuda 11.6
+- Cudnn 8.3.2
+- Tensorflow 2.8.0
+- Keras 2.8.0
 
-## DeepPilot
+## Installation
 
 ```bash
-git clone https://github.com/QuetzalCpp/DeepPilot.git
-cd DeepPilot
+git clone https://github.com/QuetzalCpp/DeepPilot4Pose.git
 ```
 
 ### Additional Resources
-- [DeepPilot Models pretrained](https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT)
-- [Datasets to train DeepPilot](https://inaoepedu-my.sharepoint.com/:f:/g/personal/carranza_inaoe_edu_mx/EslxVDqc9zBMmiV4mDH48KUBAcAHu0Ypt1rZLL6ifOjyoA?e=VYtMyT)
+- [DeepPilot Models pretrained]()
+- [Datasets to train DeepPilot4Pose](https://mnemosyne.inaoep.mx/index.php/s/uDiD4SZjw19EYuz)
 
 ### Train DeepPilot
 
 ```bash
-cd /bebop_ws/src/DeepPilot/DeepPilot_network
-python train_deeppilot.py
+cd DeepPilot4Pose
+train_DeepPilot4Pose.py
 ```
 
-### Start DeepPilot
+### Test DeepPilot
 
 ```bash
-cd /bebop_ws/src/DeepPilot/DeepPilot_network
-python evaluation_mosaic-6img.py
+cd DeepPilot4Pose
+test_DeepPilot4Pose.py
 ```
 
 ## Reference
 If you use any of data, model or code, please cite the following reference:
+
+Rojas-Perez, L. O., & Martinez-Carranza, J. (2023). DeepPilot4Pose: a fast pose localisation for MAV indoor flight using the OAK-D camera. Journal of Real-Time Image Processing, 20(1), 8.
+
+```
+@article{rojas2023deeppilot4pose,
+  title={DeepPilot4Pose: a fast pose localisation for MAV indoor flight using the OAK-D camera},
+  author={Rojas-Perez, L Oyuki and Martinez-Carranza, Jose},
+  journal={Journal of Real-Time Image Processing},
+  volume={20},
+  number={1},
+  pages={8},
+  year={2023},
+  publisher={Springer}
+}
+```
+## Related References
 
 Rojas-Perez, L.O., & Martinez-Carranza, J. (2020). DeepPilot: A CNN for Autonomous Drone Racing. Sensors, 20(16), 4524.
 https://doi.org/10.3390/s20164524
@@ -57,10 +68,24 @@ https://doi.org/10.3390/s20164524
   publisher={Multidisciplinary Digital Publishing Institute}
 }
 ```
-## Related References
 
+Rojas-Perez, L. O., & Martinez-Carranza, J. (2021). Towards autonomous drone racing without gpu using an oak-d smart camera. Sensors, 21(22), 7436.
+https://doi.org/10.3390/s21227436
+
+```
+@article{rojas2021towards,
+  title={Towards autonomous drone racing without gpu using an oak-d smart camera},
+  author={Rojas-Perez, Leticia Oyuki and Martinez-Carranza, Jose},
+  journal={Sensors},
+  volume={21},
+  number={22},
+  pages={7436},
+  year={2021},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+```
 
  ## Acknowledgements
-We are thankful for the processing time granted by the National Laboratory of Supercomputing (LNS) under the project 201902063C. The first author is thankful to Consejo Nacional de Ciencia y Tecnología (CONACYT) for the scholarship No. 924254. We are also thankful for the partial financial support granted via the FORDECYT project no. 296737 “Consorcio en Inteligencia Artificial” for the development of this work.
+The first author is thankful to Consejo Nacional de Ciencia y Tecnología (CONACYT) for the scholarship No. 924254. 
 
 
