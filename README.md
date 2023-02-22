@@ -10,7 +10,7 @@ We present DeepPilot4Pose, a compact convolutional neural network for visual pos
 This network obtains four independent output values corresponding to translation (x, y, z) and heading angle represented by the axial angle in the z−axis (EMz). Colour boxes represent the following layers: Convolutional layer (blue), max-pooling layer (dark yellow), batch normalisation (green), inception modules (red), fully connected layer (yellow) and dense layer (dark blue).
 
 <p align="center">
-  <img src="images/CNN_diagram.jpg" width="400" />
+  <img src="images/CNN_diagram.jpg" width="500" />
 </p>
 
 
@@ -26,7 +26,7 @@ To execute the model trained with the DeepPilot4Pose network on the OAK-D camera
 3) Model compilation to convert the IR to the MyriadX file.
 
 <p align="center">
-  <img src="images/model_optimization.jpg" width="400" />
+  <img src="images/model_optimization.jpg" width="600" />
 </p>
 
 ### Recommended system
@@ -44,11 +44,9 @@ cd DeepPilot4Pose
 
 ### Additional Resources
 - [DeepPilot Models pretrained]()
-- [Datasets to train DeepPilot4Pose](https://mnemosyne.inaoep.mx/index.php/s/uDiD4SZjw19EYuz)
+- [Dataset to train DeepPilot4Pose](https://mnemosyne.inaoep.mx/index.php/s/uDiD4SZjw19EYuz)
 
-<p align="center">
-  <img src="images/Dataset.jpg" width="400" />
-</p>
+<img align="right" width="300" src="images/Dataset.jpg">
 
 ### Train DeepPilot4Pose
 
