@@ -2,15 +2,27 @@
 
 We present DeepPilot4Pose, a compact convolutional neural network for visual pose estimation that runs onboard novel smartcamera, the OAK-D. We aim at using it for micro aerial vehicle (MAV) localisation, which flies in an indoor environment,where neither GPS nor external sensors are available. This calls for onboard processing, which demands a combination ofsoftware and hardware that could run efficiently onboard the MAV. To this end, we exploit the use of this novel sensor thatcan be carried by the MAV, the OAK-D camera, capable of performing neural inference on its chip in addition to providingcolour, monochromatic and depth images. We show that our DeepPilot4Pose can run efficiently on the OAK-D at 65 Hz witha localisation performance comparable to that obtained with RGB-D ORB-SLAM using the OAK-D and running onboardthe MAV on the Intel Compute Stick at 12 Hz. 
 
-## Recommended system
+<p align="center">
+  <img src="images/DeepPilot4Pose.jpg">
+</p>
+
+## DeepPilot4Pose Architecture
+
+![alt text](images/CNN_diagram.jpg)
+
+
+## Video
+A video of this approach can be watched at: https://www.youtube.com/watch?v=Jtf8e06CZoo
+
+## Installation
+
+### Recommended system
 - Ubuntu 20.04
 - Python 3.8.10 
 - Cuda 11.6
 - Cudnn 8.3.2
 - Tensorflow 2.8.0
 - Keras 2.8.0
-
-## Installation
 
 ```bash
 git clone https://github.com/QuetzalCpp/DeepPilot4Pose.git
