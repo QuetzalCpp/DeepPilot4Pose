@@ -14,25 +14,38 @@ We present DeepPilot4Pose, a compact convolutional neural network for visual pos
 
 ```bash
 git clone https://github.com/QuetzalCpp/DeepPilot4Pose.git
+cd DeepPilot4Pose
 ```
 
 ### Additional Resources
 - [DeepPilot Models pretrained]()
 - [Datasets to train DeepPilot4Pose](https://mnemosyne.inaoep.mx/index.php/s/uDiD4SZjw19EYuz)
 
-### Train DeepPilot
+### Train DeepPilot4Pose
 
 ```bash
-cd DeepPilot4Pose
 train_DeepPilot4Pose.py
 ```
 
-### Test DeepPilot
+### Test DeepPilot4Pose
 
 ```bash
-cd DeepPilot4Pose
 test_DeepPilot4Pose.py
 ```
+
+### DeepPilot4Pose H5 Keras model conversion to Tensorflow model (pb) 
+
+```bash
+conversion_h5_to_pb.py
+```
+
+### To convert the model to the Intermediate Representation (IR) run:
+```bash
+cd /opt/intel/openvino_2021.3.394/deployment_tools/model_optimizer/
+python3 mo.py --input_model model.pb --scale 1.0 --data_type FP16 --batch 1 --output_dir output_path
+```
+### Model compilation to convert the IR to the MyriadX file
+https://blobconverter.luxonis.com/
 
 ## Reference
 If you use any of data, model or code, please cite the following reference:
