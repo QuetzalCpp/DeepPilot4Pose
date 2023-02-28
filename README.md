@@ -45,8 +45,10 @@ cd DeepPilot4Pose
 ### Additional Resources
 <img align="right" width="300" src="images/Dataset.jpg"/>
 
-- [DeepPilot Models pretrained](https://github.com/QuetzalCpp/DeepPilot4Pose/releases/download/untagged-b465937e532a5b917609/Warehouse_model2_Lshape_data17-20_100ep.tar.xz)
+- [DeepPilot Model pretrained](https://github.com/QuetzalCpp/DeepPilot4Pose/releases/tag/v1.0.0) 
 - [Dataset to train DeepPilot4Pose](https://mnemosyne.inaoep.mx/index.php/s/uDiD4SZjw19EYuz)
+
+Note: The Model is only for the Warehouse scenario, so you must create the dataset for each environment where you want to relocate the camera.
 
 ### Train DeepPilot4Pose
 
