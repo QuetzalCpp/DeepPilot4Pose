@@ -14,22 +14,9 @@ import math
 import cv2
 import gc
 
-#warehouse_Lshape
-directory = '/home/rafaga22630/Documents/INAOE/Github/DeepPilot4Pose/dataset/Warehouse_PoseNet/data_Lshape_220310/'
+directory = 'dataset/data_Lshape_220310/'
 dataset_train = 'Warehouse_train_Lshape_Data_17-20_final.txt'
 dataset_eval = 'Warehouse_eval_data_Lshape.txt'
-
-# ~ # 7 Scenes - Redkitchen
-# ~ directory = '/home/rafaga22630/datasets/RGB-D_Dataset_7-Scenes_Microsoft/redkitchen/'
-# ~ dataset_train = 'train-data.txt'
-# ~ dataset_train = 'train-datax4.txt'
-# ~ dataset_eval = 'kitchen_eval.txt'
-
-# ~ # 7 Scenes - Heads
-# ~ directory = '/home/rafaga22630/datasets/RGB-D_Dataset_7-Scenes_Microsoft/heads/'
-# ~ dataset_train = 'train-data.txt'
-# ~ dataset_train = 'train-data_x4.txt'
-# ~ dataset_eval = 'evalData.txt'
 
 class datasource(object):
 	def __init__(self, images, poses):
