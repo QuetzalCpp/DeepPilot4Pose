@@ -16,7 +16,7 @@ if __name__ == "__main__":
     model = net.create_DeepPilot4Pose()
     
     
-    path = "/home/rafaga22630/Documents/INAOE/Github/DeepPilot4Pose/models/"
+    path = "models/"
     model_name = path + "Test_Warehouse_model10_100ep.h5"
     output_model = "Test_Warehouse_model10_100ep"
     
