@@ -1,5 +1,9 @@
-# ~ from tensorflow.python.framework.ops import disable_eager_execution
-# ~ disable_eager_execution()
+#!/usr/bin/env python
+__author__ = "L. Oyuki Rojas-Perez and Dr. Jose Martinez-Carranza"
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "L. Oyuki Rojas-Perez"
+__email__ = "carranza@inaoep.mx"
 
 import math
 import network_libs.helper_DeepPilot4Pose as helper_net
